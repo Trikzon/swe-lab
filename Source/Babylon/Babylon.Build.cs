@@ -2,9 +2,9 @@
 
 using UnrealBuildTool;
 
-public class SWE_Lab : ModuleRules
+public class Babylon : ModuleRules
 {
-	public SWE_Lab(ReadOnlyTargetRules Target) : base(Target)
+	public Babylon(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 

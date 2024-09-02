@@ -5,7 +5,7 @@
 	"Description": "",
 	"Modules": [
 		{
-			"Name": "SWE_Lab",
+			"Name": "Babylon",
 			"Type": "Runtime",
 			"LoadingPhase": "Default"
 		}

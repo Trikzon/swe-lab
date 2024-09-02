@@ -3,13 +3,13 @@
 using UnrealBuildTool;
 using System.Collections.Generic;
 
-public class SWE_LabTarget : TargetRules
+public class BabylonEditorTarget : TargetRules
 {
-	public SWE_LabTarget(TargetInfo Target) : base(Target)
+	public BabylonEditorTarget(TargetInfo Target) : base(Target)
 	{
-		Type = TargetType.Game;
+		Type = TargetType.Editor;
 		DefaultBuildSettings = BuildSettingsVersion.V5;
 		IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_4;
-		ExtraModuleNames.Add("SWE_Lab");
+		ExtraModuleNames.Add("Babylon");
 	}
 }

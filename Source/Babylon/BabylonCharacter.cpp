@@ -1,6 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "SWE_LabCharacter.h"
+#include "BabylonCharacter.h"
 #include "Engine/LocalPlayer.h"
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
@@ -14,9 +14,9 @@
 DEFINE_LOG_CATEGORY(LogTemplateCharacter);
 
 //////////////////////////////////////////////////////////////////////////
-// ASWE_LabCharacter
+// ABabylonCharacter
 
-ASWE_LabCharacter::ASWE_LabCharacter()
+ABabylonCharacter::ABabylonCharacter()
 {
 	// Set size for collision capsule
 	GetCapsuleComponent()->InitCapsuleSize(42.f, 96.0f);
@@ -54,7 +54,7 @@ ASWE_LabCharacter::ASWE_LabCharacter()
 	// are set in the derived blueprint asset named ThirdPersonCharacter (to avoid direct content references in C++)
 }
 
-void ASWE_LabCharacter::BeginPlay()
+void ABabylonCharacter::BeginPlay()
 {
 	// Call the base class  
 	Super::BeginPlay();
@@ -63,7 +63,7 @@ void ASWE_LabCharacter::BeginPlay()
 //////////////////////////////////////////////////////////////////////////
 // Input
 
-void ASWE_LabCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
+void ABabylonCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	// Add Input Mapping Context
 	if (APlayerController* PlayerController = Cast<APlayerController>(GetController()))
@@ -82,10 +82,10 @@ void ASWE_LabCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCo
 		EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Completed, this, &ACharacter::StopJumping);
 
 		// Moving
-		EnhancedInputComponent->BindAction(MoveAction, ETriggerEvent::Triggered, this, &ASWE_LabCharacter::Move);
+		EnhancedInputComponent->BindAction(MoveAction, ETriggerEvent::Triggered, this, &ABabylonCharacter::Move);
 
 		// Looking
-		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &ASWE_LabCharacter::Look);
+		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &ABabylonCharacter::Look);
 	}
 	else
 	{
@@ -93,7 +93,7 @@ void ASWE_LabCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCo
 	}
 }
 
-void ASWE_LabCharacter::Move(const FInputActionValue& Value)
+void ABabylonCharacter::Move(const FInputActionValue& Value)
 {
 	// input is a Vector2D
 	FVector2D MovementVector = Value.Get<FVector2D>();
@@ -116,7 +116,7 @@ void ASWE_LabCharacter::Move(const FInputActionValue& Value)
 	}
 }
 
-void ASWE_LabCharacter::Look(const FInputActionValue& Value)
+void ABabylonCharacter::Look(const FInputActionValue& Value)
 {
 	// input is a Vector2D
 	FVector2D LookAxisVector = Value.Get<FVector2D>();

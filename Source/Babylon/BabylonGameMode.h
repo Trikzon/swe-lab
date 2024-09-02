@@ -4,15 +4,15 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/GameModeBase.h"
-#include "SWE_LabGameMode.generated.h"
+#include "BabylonGameMode.generated.h"
 
 UCLASS(minimalapi)
-class ASWE_LabGameMode : public AGameModeBase
+class ABabylonGameMode : public AGameModeBase
 {
 	GENERATED_BODY()
 
 public:
-	ASWE_LabGameMode();
+	ABabylonGameMode();
 };
 
 
