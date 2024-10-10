@@ -19,4 +19,13 @@ class UBabylonAttributeSet : public UAttributeSet
 	UPROPERTY()
 	FGameplayAttributeData HP;
 	BABYLON_ATTRIBUTE_ACCESSORS(UBabylonAttributeSet, HP);
+	
+
+	UPROPERTY()
+	FGameplayAttributeData AStr; //Attack Strength
+	BABYLON_ATTRIBUTE_ACCESSORS(UBabylonAttributeSet, AStr)
+
+	UPROPERTY()
+	FGameplayAttributeData Def; //Defense
+	BABYLON_ATTRIBUTE_ACCESSORS(UBabylonAttributeSet, Def);
 };

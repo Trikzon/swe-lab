@@ -55,6 +55,9 @@ public:
 	{
 		return AbilitySystem;
 	}
+
+	UPROPERTY()
+	class UBabylonAttributeSet* AttributeSet;
 	
 
 protected:

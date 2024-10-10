@@ -11,6 +11,7 @@
 #include "EnhancedInputSubsystems.h"
 #include "InputActionValue.h"
 #include "AbilitySystemComponent.h"
+#include "BabylonAttributeSet.h"
 
 DEFINE_LOG_CATEGORY(LogTemplateCharacter);
 
@@ -55,6 +56,8 @@ ABabylonCharacter::ABabylonCharacter()
 	// are set in the derived blueprint asset named ThirdPersonCharacter (to avoid direct content references in C++)
 
 	AbilitySystem = CreateDefaultSubobject<UAbilitySystemComponent>("AbilitySystem");
+
+	AttributeSet = CreateDefaultSubobject<UBabylonAttributeSet>("AttributeSet");
 }
 
 void ABabylonCharacter::BeginPlay()
