@@ -10,6 +10,7 @@
 #include "EnhancedInputComponent.h"
 #include "EnhancedInputSubsystems.h"
 #include "InputActionValue.h"
+#include "AbilitySystemComponent.h"
 
 DEFINE_LOG_CATEGORY(LogTemplateCharacter);
 
@@ -52,12 +53,16 @@ ABabylonCharacter::ABabylonCharacter()
 
 	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
 	// are set in the derived blueprint asset named ThirdPersonCharacter (to avoid direct content references in C++)
+
+	AbilitySystem = CreateDefaultSubobject<UAbilitySystemComponent>("AbilitySystem");
 }
 
 void ABabylonCharacter::BeginPlay()
 {
 	// Call the base class  
 	Super::BeginPlay();
+
+	AbilitySystem->InitAbilityActorInfo(this, this);
 }
 
 //////////////////////////////////////////////////////////////////////////

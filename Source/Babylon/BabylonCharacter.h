@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "AbilitySystemInterface.h"
 #include "Logging/LogMacros.h"
 #include "BabylonCharacter.generated.h"
 
@@ -16,7 +17,7 @@ struct FInputActionValue;
 DECLARE_LOG_CATEGORY_EXTERN(LogTemplateCharacter, Log, All);
 
 UCLASS(config=Game)
-class ABabylonCharacter : public ACharacter
+class ABabylonCharacter : public ACharacter, public IAbilitySystemInterface
 {
 	GENERATED_BODY()
 
@@ -46,6 +47,14 @@ class ABabylonCharacter : public ACharacter
 
 public:
 	ABabylonCharacter();
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+	UAbilitySystemComponent* AbilitySystem;
+
+	virtual UAbilitySystemComponent* GetAbilitySystemComponent() const override
+	{
+		return AbilitySystem;
+	}
 	
 
 protected:

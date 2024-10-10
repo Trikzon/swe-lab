@@ -8,6 +8,6 @@ public class Babylon : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "EnhancedInput" });
+		PublicDependencyModuleNames.AddRange(new string[] {"GameplayAbilities", "Core", "CoreUObject", "Engine", "InputCore", "EnhancedInput" });
 	}
 }
