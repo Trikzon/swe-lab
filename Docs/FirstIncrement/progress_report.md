@@ -15,6 +15,18 @@ Echoes of Babylon is a mech action game inspired by the souls-like genre and 3D 
 ## 3. Accomplishments and overall project status during this increment
 <!-- Describe in detail what was accomplished during this increment and where your project stands overall compared to the initial scope and functionality proposed. -->
 
+- Set up a working UE5 project with C++ on all of our computers.
+- Researched UE5 Gameplay Ability System (GAS) Plugin.
+- Researched Enemy AI in UE5.
+- Gameplay Ability System (GAS) foundations completed.
+    - Created an attribute set and linked it to the player.
+    - Created an enemy that can move and follow the player.
+- Created a model for the player.
+- Created animations for the player and implemented them into the engine.
+    - Run, walk, jump, attack, and block animations
+    - Created animation blueprint, state machine, and animation blendspace in UE5.
+- Created a Input Mapping Context with our input for keyboard/mouse and gamepad actions.
+
 ## 4. Challenges, changes in the plan and scope of the project and things that went wrong during this incrmeent
 <!-- Please describe here in detail: 
 
@@ -46,13 +58,18 @@ Our scope had to be narrowed to compensate for this learning time. We decided th
 - Created the basic enemy class and implemented behavior to allow the enemy to follow the player in the level. Also implemented the GAS system in C++, and connected the attributes set to the player.
 
 ### Jake Younan
-- wrote the IT Document
+- Wrote the IT Document
 - Contributed to the Game Design Document
 - Developed the MoodBoard in photoshop and Pinterest
 - Modeled the Player in Blender, Textured the player in Substance Painter, and Animated the player using Mixamo
 - Created the Animation BluePrint, Animation State Machine, and Animation Blend Space
 
 ### Dion Tryban
+- Wrote the accomplishments section of the progress report.
+- Created the class diagram and wrote the operating environment and assumptions and dependencies in the RD document.
+- Contributed to the Game Design Document.
+- Detached input handling from C++ and remade it in Blueprints to allow for quicker prototyping.
+- Researched, but did not implement, the Gameplay Ability System.
 
 ## 6. Plans for the next increment
 <!-- If this report if for the first or second increment, describe what are you planning to achieve in the next increment. -->
