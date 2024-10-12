@@ -59,6 +59,7 @@ Our scope had to be narrowed to compensate for this learning time. We decided th
 
 ### Jake Younan
 - Wrote the IT Document
+- Contributed to the UML diagrams in the RD document.
 - Contributed to the Game Design Document
 - Developed the MoodBoard in photoshop and Pinterest
 - Modeled the Player in Blender, Textured the player in Substance Painter, and Animated the player using Mixamo
