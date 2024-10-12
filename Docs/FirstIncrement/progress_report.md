@@ -46,6 +46,11 @@ Our scope had to be narrowed to compensate for this learning time. We decided th
 - Created the basic enemy class and implemented behavior to allow the enemy to follow the player in the level. Also implemented the GAS system in C++, and connected the attributes set to the player.
 
 ### Jake Younan
+- wrote the IT Document
+- Contributed to the Game Design Document
+- Developed the MoodBoard in photoshop and Pinterest
+- Modeled the Player in Blender, Textured the player in Substance Painter, and Animated the player using Mixamo
+- Created the Animation BluePrint, Animation State Machine, and Animation Blend Space
 
 ### Dion Tryban
 
