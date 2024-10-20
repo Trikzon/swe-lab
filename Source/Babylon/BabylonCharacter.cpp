@@ -1,4 +1,4 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
+// Copyright Chris Swezy, Dion Tryban, Jake Younan. All Rights Reserved.
 
 #include "BabylonCharacter.h"
 #include "Engine/LocalPlayer.h"
@@ -14,9 +14,6 @@
 #include "BabylonAttributeSet.h"
 
 DEFINE_LOG_CATEGORY(LogTemplateCharacter);
-
-//////////////////////////////////////////////////////////////////////////
-// ABabylonCharacter
 
 ABabylonCharacter::ABabylonCharacter()
 {

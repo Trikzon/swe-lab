@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Copyright Chris Swezy, Dion Tryban, Jake Younan. All Rights Reserved.
 
 #pragma once
 
@@ -37,5 +37,4 @@ public:
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-
 };

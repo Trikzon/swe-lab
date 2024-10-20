@@ -1,5 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
+// Copyright Chris Swezy, Dion Tryban, Jake Younan. All Rights Reserved.
 
 #include "BaseEnemy.h"
 #include "AbilitySystemComponent.h"
@@ -14,7 +13,6 @@ ABaseEnemy::ABaseEnemy()
 	AbilitySystem = CreateDefaultSubobject<UAbilitySystemComponent>("AbilitySystem");
 
 	AttributeSet = CreateDefaultSubobject<UBabylonAttributeSet>("AttributeSet");
-
 }
 
 // Called when the game starts or when spawned
@@ -23,20 +21,16 @@ void ABaseEnemy::BeginPlay()
 	Super::BeginPlay();
 
 	AbilitySystem->InitAbilityActorInfo(this, this);
-	
 }
 
 // Called every frame
 void ABaseEnemy::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
 }
 
 // Called to bind functionality to input
 void ABaseEnemy::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
-
 }
-

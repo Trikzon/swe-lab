@@ -1,4 +1,4 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
+// Copyright Chris Swezy, Dion Tryban, Jake Younan. All Rights Reserved.
 
 #pragma once
 
@@ -82,4 +82,3 @@ public:
 	/** Returns FollowCamera subobject **/
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
 };
-

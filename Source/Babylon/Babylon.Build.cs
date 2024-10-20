@@ -1,4 +1,4 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
+// Copyright Chris Swezy, Dion Tryban, Jake Younan. All Rights Reserved.
 
 using UnrealBuildTool;
 
