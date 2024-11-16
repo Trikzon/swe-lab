@@ -17,7 +17,7 @@ class UBabylonAttributeSet : public UAttributeSet
 {
 	GENERATED_BODY()
 
-	public:
+public:
 	UPROPERTY()
 	FGameplayAttributeData HP;
 	BABYLON_ATTRIBUTE_ACCESSORS(UBabylonAttributeSet, HP);
