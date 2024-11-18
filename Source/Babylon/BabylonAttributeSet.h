@@ -34,4 +34,8 @@ public:
 	UPROPERTY()
 	FGameplayAttributeData WStr; //Weapon Strength
 	BABYLON_ATTRIBUTE_ACCESSORS(UBabylonAttributeSet, WStr);
+
+	UPROPERTY()
+	FGameplayAttributeData Block; //Block, only used while blocking
+	BABYLON_ATTRIBUTE_ACCESSORS(UBabylonAttributeSet, Block);
 };
