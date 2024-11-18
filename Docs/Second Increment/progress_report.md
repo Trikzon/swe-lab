@@ -56,7 +56,10 @@ than anticipated due to some challenges in th engine of determining the location
 - Implemented the block mechanic
 
 ### Jake Younan
-
+-wrote the shareholder email
+- Implemented Enemy AI including tasks, Behavior Tree, and BlackBoard
+- Modeled, Rigged, and Animated Enemy Mech
+- Made the Level Environment with UE5 Landscape Sculpter
 
 ### Dion Tryban
 
@@ -68,11 +71,12 @@ Next incrment, we are planning to further implement the idea of multiple weapons
 <!-- Draft an email communication to the stakeholders of the project succinctly communicating progress and current project status. The email should be intended for a non-technical audience that is expertly aware of the domain your application is designed for. You may not “break the fourth wall” or otherwise refer to the course in the email, instead, you should think about how setbacks or issues you encounter may reflect setbacks that happen in the larger context of production software development and explain them as such. The email should not exceed 500 words. -->
 Dear Stakeholders,
 
-Our project is progressing at a reasonable rate, although we are experiencing slight delays. Training our team to use the Unreal Engine has used more of the initial time for our first deadline than we anticipated, but that time will be well spent to ensure a quality project and speedy development later on. We have designed the core systems of game, and laid out a thorough, robust architecture for the software design that will allow us to move quickly as we progress out of training.
+Our project is progressing with great strides, though we have experienced a few hurdles that have put us a bit behind. The reason for this delay is due to the complicated nature of setting up robjust systesms in UE5. However, setting up these complicated systems now ensures we have a strong platform to continue deverlopment at the appropriate pace. We have Implemented enemies who can attack, do doamge based on an equation, and make choices based on a behavior tree. In addition we have laid out and implemented an inventory system. 
 
-Currently, we have our player character with basic abilities and a base enemy that we can easily expand into multiple enemy types. We are about to be finished implementing our system for weapons and attacking after overcoming a delay with Unreal's Gameplay Ability System.
+We currently have our player character with basic abilities and a base enemy that we will expand into multiple enemy types. We have the enemy decision tree set up to follow the player and attack them. We will soon give our enemy the ability to patrol the area, and attack the player when they get near. We have an inventory system that can equip items, showing the player in a window with their equiptment. We have a basic level that we plan to place our enemies in and populate with more engaing models. 
 
 Thank you for your support,
 Echoes of Babylon Team
+
 
 ## 8. Link to video
