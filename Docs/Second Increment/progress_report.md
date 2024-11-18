@@ -15,12 +15,13 @@ Echoes of Babylon is a mech action game inspired by the souls-like genre and 3D 
 ## 3. Accomplishments and overall project status during this increment
 <!-- Describe in detail what was accomplished during this increment and where your project stands overall compared to the initial scope and functionality proposed. -->
 
-- Created an inventory system
-- Created an inheritance based equipment system
-- Used the GAS plugin to change the player's attributes based on equipment
-- Created an equation based damage system shared by both the player and enemies to replace the original placeholder system
-- Implemented the enemy attacking behavior, allowing the player to be killed
-- Created the block mechanic
+- Created an inventory system with equipable items and a dynamically generated "backpack" screen.
+- Created an inheritance based equipment system including `BP_Equipment`, `BP_InHand`, `BP_Armor`, `BP_RangedWeapon`, and `BP_MeleeWeapon`.
+- Used the GAS plugin to change the player's attributes based on equipment equipped.
+- Created an equation based damage system shared by both the player and enemies to replace the original placeholder system.
+- Implemented the enemy attacking behavior and allow for the player to be killed.
+- Created the block mechanic for the player.
+- Created the beginnings of our game level.
 
 ## 4. Challenges, changes in the plan and scope of the project and things that went wrong during this incrmeent
 <!-- Please describe here in detail: 
@@ -31,10 +32,7 @@ Echoes of Babylon is a mech action game inspired by the souls-like genre and 3D 
 
 - anything that went wrong during this increment -->
 
-The main challenge during this increment was scheduling. We were at a point in the project where many systems relied on systems that other group members were working on, and we struggled to schedule time to work together. 
-We resolved this by setting aside time later during the increment to work together and catch up. As a result of this problem our scope had to shrink slightly. We decided that a full level was more appropriate for the third increment, 
-as the software development aspect of the project needed to take precedence. We also decided that the ranged weapon feature could be delayed, as it requires the also delayed camera and targeting features. The camera proved more problematic 
-than anticipated due to some challenges in th engine of determining the locations of enemies relative to the player, and had to be delayed after realizing the time budgeted for the feature was not sufficient. 
+The main challenge during this increment was scheduling. We were at a point in the project where many systems relied on systems that other group members were working on, and we struggled to schedule time to work together. We resolved this by setting aside time later during the increment to work together and catch up. As a result of this problem our scope had to shrink slightly. We decided that a full level was more appropriate for the third increment, as the software development aspect of the project needed more attention. We also decided that the ranged weapon feature could be delayed, as it requires the also delayed camera and targeting features. The camera proved more problematic than anticipated due to some challenges in the engine of determining the locations of enemies relative to the player, and had to be delayed after realizing the time budgeted for the feature was not sufficient.
 
 ## 5. Team Member Contribution for this increment
 <!-- Please list each individual member and their contributions to each of the deliverables in this increment (be as detailed as possible). In other words, describe the contribution of each team member to: 
@@ -50,22 +48,27 @@ than anticipated due to some challenges in th engine of determining the location
     the video or presentation -->
 ### Chris Swezy
 - Wrote the progress report
-- Helped implement enemy attacks using the GAS system
-- Implemented the damage equation
-- Implemented equiping items to change attributes
-- Implemented the block mechanic
+- Helped implement enemy attacks using the GAS system.
+- Designed and implemented the damage equation for the attack ability.
+- Implemented equipping items to change gameplay attributes.
+- Implemented the block mechanic for the player using the GAS system.
 
 ### Jake Younan
--wrote the shareholder email
-- Implemented Enemy AI including tasks, Behavior Tree, and BlackBoard
-- Modeled, Rigged, and Animated Enemy Mech
-- Made the Level Environment with UE5 Landscape Sculpter
+- Wrote the shareholder email.
+- Implemented Enemy AI including tasks, Behavior Tree, and BlackBoard.
+- Modeled, Rigged, and Animated Enemy Mech.
+- Made the Level Environment with UE5 Landscape Sculpter.
 
 ### Dion Tryban
+- Designed the inventory UI using UE5 widgets.
+- Store an arbitrary number of equipment items on the player.
+- Allow for dragging and dropping equipment in the inventory.
+- Hooked equipping items into the gameplay attribute system Chris developed.
+- Display the live player model inside of the inventory.
 
 ## 6. Plans for the next increment
 <!-- If this report if for the first or second increment, describe what are you planning to achieve in the next increment. -->
-Next incrment, we are planning to further implement the idea of multiple weapons. We currently have the systems in place to switch items and have multiple placeholder weapons, but we need to create final versions of different weapons, and implement more robust combat mechanics to make them more unique using different animations and collisions. We also plan to add ranged weapons and more enemies including a boss. We plan to add a final version of a level for the player to explore. 
+Next incrment, we are planning to further implement the idea of multiple weapons. We currently have the systems in place to switch items and have multiple placeholder weapons, but we need to create final versions of different weapons, and implement more robust combat mechanics to make them more unique using different animations and collisions. We also plan to add ranged weapons and more enemies including a boss. We plan to add a final version of a level for the player to explore. The inventory system requires more work including different tabs per equipment type, item tooltips, properly displaying the equipped equipment on the player, and picking up equipment from the world dropped by enemies.
 
 ## 7. Stakeholder Communication
 <!-- Draft an email communication to the stakeholders of the project succinctly communicating progress and current project status. The email should be intended for a non-technical audience that is expertly aware of the domain your application is designed for. You may not “break the fourth wall” or otherwise refer to the course in the email, instead, you should think about how setbacks or issues you encounter may reflect setbacks that happen in the larger context of production software development and explain them as such. The email should not exceed 500 words. -->
