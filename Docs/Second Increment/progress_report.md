@@ -55,6 +55,7 @@ The main challenge during this increment was scheduling. We were at a point in t
 
 ### Jake Younan
 - Wrote the shareholder email.
+- contributed to the documentation
 - Implemented Enemy AI including tasks, Behavior Tree, and BlackBoard.
 - Modeled, Rigged, and Animated Enemy Mech.
 - Made the Level Environment with UE5 Landscape Sculpter.
