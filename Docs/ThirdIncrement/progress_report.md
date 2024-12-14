@@ -1,5 +1,5 @@
 # Progress Report
-- Increment 1
+- Increment 3
 - Group #30
 
 ## 1. Team Members
@@ -10,14 +10,17 @@
 ## 2. Project Title and Description
 Echoes of Babylon
 
-Echoes of Babylon is a mech action game inspired by the souls-like genre and 3D beat-em ups. Our final product will be a single level demo with a fleshed out combat system with multiple enemy types.
+Echoes of Babylon is a mech action game inspired by the souls-like genre and 3D beat-em ups. Our final product will be a single level demo with a fleshed out combat system with multiple weapons, equipment, and an enemy.
 
 ## 3. Accomplishments and overall project status during this increment
 <!-- Describe in detail what was accomplished during this increment and where your project stands overall compared to the initial scope and functionality proposed. -->
 
-- Created a level 
-- Implemented enemies detecting player by sight
-- Implemented a camera lock on system, allowing the player to lock the camera on to an enemy
+- Developed the basic level further.
+- Implemented enemies detecting player by sight instead of always.
+- Implemented a camera lock on system, allowing the player to lock the camera on to an enemy.
+- Added a sprint ability.
+- Added pickup-able in-world equipment items that can be dropped by enemies.
+- Added in-inventory tooltips of equipment to display equipment name and statistics.
 
 ## 4. Challenges, changes in the plan and scope of the project and things that went wrong during this incrmeent
 <!-- Please describe here in detail: 
@@ -46,24 +49,29 @@ Time was a major challenge during this increment, especially due to the time req
 
     the video or presentation -->
 ### Chris Swezy
-- Wrote the progres report
-- Implemented the camera targeting feature
-- 
+- Wrote the progress report.
+- Implemented the camera targeting feature.
+- Added the sprint ability to the player.
+- Improved the block ability by slowing the player when active.
 
 ### Jake Younan
-- Developed the level
-    - Added river deatils using UE5 plugin
-    - added a structure into the level
-- Created the enemy sight detection feature
+- Improved the basic level.
+    - Added river deatils using UE5 water plugin.
+    - Added a structure into the level.
+- Created the enemy AI sight detection feature.
 
 ### Dion Tryban
-- 
+- Recorded the video.
+- Added pickup-able in-world equipment items that can be dropped by enemies.
+- Added in-inventory tooltips for equipment to display equipment name and statistics.
+- Added basic UI to the player's HUD displaying the player's health, strength, and blocking state.
+- Added different versions of weapons, armor, and shields with different stats.
 
 ## 7. Stakeholder Communication
 <!-- Draft an email communication to the stakeholders of the project succinctly communicating progress and current project status. The email should be intended for a non-technical audience that is expertly aware of the domain your application is designed for. You may not “break the fourth wall” or otherwise refer to the course in the email, instead, you should think about how setbacks or issues you encounter may reflect setbacks that happen in the larger context of production software development and explain them as such. The email should not exceed 500 words. -->
 Dear Stakeholders,
 
-We have created a compelling virutal slice, nearing the full functionality of our product. We have faced some delays, which is to be expected in the industry and due to the scope of our game, but we are progressing at a good pace with those factors in mind. We have tightened up the combat system with important gameplay features like camera targeting, and improved our inventory menu system. We have made strides on level development, and on the complezity of our enemy behavior. 
+We have created a compelling virtual slice, nearing the full functionality of our product. We have faced some delays, which is to be expected in the industry and due to the scope of our game, but we are progressing at a good pace with those factors in mind. We have tightened up the combat system with important gameplay features like camera targeting, and improved our inventory menu system. We have made strides on level development, and on the complexity of our enemy behavior. 
 
 Thank you for your support,
 Echoes of Babylon Team

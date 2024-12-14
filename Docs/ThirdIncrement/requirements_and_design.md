@@ -1,5 +1,5 @@
 # Software Requirements and Design Document For Group 30
-- Version 2.0
+- Version 3.0
 
 ## Authors
 - Jake Y
@@ -21,7 +21,7 @@ We’re developing a demo scale action adventure rpg with a mech theme. The syst
 3. The player must be able to take damage from an enemy's attack.
     - Taking enough damage must lead to a fail state and a game over screen.
 4. The player and enemies must be able to block attacks to avoid damage.
-5. The player needs to be able to dodge to avoid damage.
+5. The player must be able to pick up equipment and equip it to change its stats.
 
 ## 3. Non-functional Requirements (10 points)
 <!-- List the non-functional requirements of the system (any requirement referring to a property of the system, such as security, safety, software quality, performance, reliability, etc.) You may provide a brief rationale for any requirement which you feel requires explanation as to how and/or why the requirement was derived. -->
