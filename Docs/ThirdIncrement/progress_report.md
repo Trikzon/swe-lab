@@ -31,10 +31,7 @@ Echoes of Babylon is a mech action game inspired by the souls-like genre and 3D 
 
 - anything that went wrong during this increment -->
 
-The main challenge during this increment was scheduling. We were at a point in the project where many systems relied on systems that other group members were working on, and we struggled to schedule time to work together. We resolved this by setting aside time later during the increment to work together and catch up. As a result of this problem our scope had to shrink slightly. We decided that a full level was more appropriate for the third increment, as the software development aspect of the project needed more attention. We also decided that the ranged weapon feature could be delayed, as it requires the also delayed camera and targeting features. The camera proved more problematic than anticipated due to some challenges in the engine of determining the locations of enemies relative to the player, and had to be delayed after realizing the time budgeted for the feature was not sufficient.
-
-
-Time was a major challenge during this increment, especially due to the time required for different assignemnts. 
+Time was the largest challenge this increment. Being at the end of the semester, we all had final assignments and exams from other classes to focus our timr on. Fortunately, this was the first increment where the systems that we were working on were no dependent on each other allowing us to work asynchronously. We decided to lower the scope away from having multiple enemies and instead focus on improving what we already had. Jake focused on level design and enemy AI. Chris focused on player abilities such as adding camera lock. Dion focused on the inventory system.
 
 ## 5. Team Member Contribution for this increment
 <!-- Please list each individual member and their contributions to each of the deliverables in this increment (be as detailed as possible). In other words, describe the contribution of each team member to: 
@@ -78,3 +75,4 @@ Echoes of Babylon Team
 
 
 ## 8. Link to video
+https://youtu.be/6SHfszMuJfE?si=370eLUq2PXnJYyTq
